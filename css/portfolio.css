@@ -39,6 +39,10 @@ img{
     object-fit:contain;
 }
 
+.socials-img:hover{
+    transform:scale(1.1);
+}
+
 header {
     background-color: #1e1f21;
 
