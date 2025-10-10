@@ -7,14 +7,43 @@ html {
     font-family: 'Agency FB';
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 body {
     background-color: #525861;
-
     color: white;
+}
+
+.game-card, header {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: #1e1f21;
+}
+
+header {
+    background-color: #1e1f21;
+    border-top: 2em;
+    border-bottom: 2em;
+    padding: 1em;
+
+}
+
+main {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
 }
 
 .container{
     display: flex;
+
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-info{
@@ -33,23 +62,44 @@ body {
     padding : 10px;
 }
 
-img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
+.socials-img:hover {
+    transform: scale(1.1);
 }
 
-.socials-img:hover{
-    transform:scale(1.1);
+.about-me {
+    width: 60%;
+    margin: 0 auto;
 }
 
-header {
-    background-color: #1e1f21;
+.game-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content : center;
+    width : 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
 
-    border-top: 2em;
-    border-bottom: 2em;
+.game-card {
+    display: flex;
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
 
-    padding:1em;
+}
+
+.game-card img {
+    width: 50%;
+    object-fit : cover;
+}
+
+.game-info {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 h1{
