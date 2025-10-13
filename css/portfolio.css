@@ -14,21 +14,26 @@ img {
 }
 
 body {
-    background-color: #525861;
     color: white;
+
+    background-color: #b1b1b1;
+    opacity: 1;
+    background-image: linear-gradient(#979797 0.8px, transparent 0.8px), linear-gradient(90deg, #979797 0.8px, transparent 0.8px), linear-gradient(#979797 0.4px, transparent 0.4px), linear-gradient(90deg, #979797 0.4px, #b1b1b1 0.4px);
+    background-size: 20px 20px, 20px 20px, 4px 4px, 4px 4px;
+    background-position: -0.8px -0.8px, -0.8px -0.8px, -0.4px -0.4px, -0.4px -0.4px;
 }
 
-.game-card, header {
+.game-card, header, h2 {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    background-color: #1e1f21;
+    background-color: #131314;
+    opacity: 1;
+    background-image: linear-gradient(30deg, #0b0b0b 12%, transparent 12.5%, transparent 87%, #0b0b0b 87.5%, #0b0b0b), linear-gradient(150deg, #0b0b0b 12%, transparent 12.5%, transparent 87%, #0b0b0b 87.5%, #0b0b0b), linear-gradient(30deg, #0b0b0b 12%, transparent 12.5%, transparent 87%, #0b0b0b 87.5%, #0b0b0b), linear-gradient(150deg, #0b0b0b 12%, transparent 12.5%, transparent 87%, #0b0b0b 87.5%, #0b0b0b), linear-gradient(60deg, #0b0b0b77 25%, transparent 25.5%, transparent 75%, #0b0b0b77 75%, #0b0b0b77), linear-gradient(60deg, #0b0b0b77 25%, transparent 25.5%, transparent 75%, #0b0b0b77 75%, #0b0b0b77);
+    background-size: 8px 14px;
+    background-position: 0 0, 0 0, 4px 7px, 4px 7px, 0 0, 4px 7px;
 }
 
 header {
-    background-color: #1e1f21;
-    border-top: 2em;
-    border-bottom: 2em;
     padding: 1em;
-
 }
 
 main {
@@ -69,6 +74,10 @@ main {
 .about-me {
     width: 60%;
     margin: 0 auto;
+    padding: 20px;
+    border: dashed;
+    border-color: white;
+    background-color: #131314;
 }
 
 .game-grid{
@@ -94,6 +103,9 @@ main {
 .game-card img {
     width: 50%;
     object-fit : cover;
+    
+    border: 2px ridge white;
+    box-sizing: border-box;
 }
 
 .game-info {
@@ -103,13 +115,25 @@ main {
 }
 
 h1{
-
     color:white;
-
     font-size:3rem;
+}
+
+h2{
+    color:white;
+    text-align: center;
+
+    font-size: 3rem;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    padding: 20px;
 }
 
 p{
     font-size: 2em;
 }
+
+
 
